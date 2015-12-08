@@ -1,0 +1,160 @@
+$grid-columns:              12 !default;
+$grid-gutter-width:         30px !default;
+
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+$primary-color: #ff3600 !default;
+$text-color: #5d5d5d !default;
+
+$primary-font: 'Helvetica Neue', Helvetica, Arial sans-serif;
+$secondary-font: Oswald, sans-serif;
+
+
+// Typography
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: normal;
+	margin: 0 0 15px 0;
+	font-family: $secondary-font;
+	text-transform: uppercase;
+	font-weight: normal;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+p {
+	margin: 0 0 15px 0;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	transition: color 0.18s ease, background-color 0.18s ease;
+	outline: none;
+	color: $primary-color;
+}
+
+a:hover,
+a:focus {
+	color: lighten($primary-color, 10%);
+}
+
+a:active {
+	outline: none;
+}
+
+body {
+	font-family: $primary-font;
+	color: $text-color;
+	font-size: 16px;
+	line-height: 1.625;
+	-webkit-font-smoothing: antialised;
+}
+
+// General Forms
+
+label {
+	display: block;
+	font-size: 90%;
+	margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+	border-radius: 0;
+	box-shadow: none;
+	width: auto;
+	font: inherit;
+	padding: 14px 10px;
+	height: auto;
+	border: 2px solid #EFEFEF;
+	line-height: normal;
+	transition: all 0.18s ease;
+	min-width: 80%;
+
+	&:hover {
+
+	}
+
+	&:focus {
+		background: #fafafa;
+		border-color: #b3b3b3;
+		outline: none;
+	}
+}
+
+textarea {
+	width: 100%;
+	height: auto;
+}
+
+fieldset {
+	padding: 15px 15px 0 15px;
+
+	legend {
+		font-weight: bold;
+		padding: 0 3px;
+		margin: 0;
+		margin-left: -3px;
+	}
+}
+
+input.highlight { border-color: #ff4a4a;}
+
+/* Buttons
+=================================== */
+
+a.btn,
+input[type=submit],
+button[type=submit] {
+	line-height: normal;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 0;
+	font-size: 14px;
+	font-family: $secondary-font;
+	vertical-align: middle;
+	padding: 7px 40px;
+	background: transparent;
+	outline: none;
+	transition: all 0.18s ease;
+	text-transform: uppercase;
+	
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:focus {
+
+	}
+}
+
+#map * { max-width: none !important; }
